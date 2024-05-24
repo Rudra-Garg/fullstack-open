@@ -1,15 +1,16 @@
 {
-  "name": "part1",
+  "name": "countrydata",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "../Part 1/CourseInfo/node_modules/.bin/vite",
-    "build": "../Part 1/CourseInfo/node_modules/.bin/vite build",
-    "lint": "../Part 1/CourseInfo/node_modules/.bin/eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "../Part 1/CourseInfo/node_modules/.bin/vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
