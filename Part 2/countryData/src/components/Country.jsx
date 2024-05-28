@@ -9,7 +9,6 @@ const Country = ({country}) => {
             .then(res => {
                 setWeather(res.data)
             })
-            .catch(err => console.log(err))
     },[])
     if(weather) {
         return (
@@ -40,6 +39,8 @@ const Country = ({country}) => {
                     {Object.values(country.languages).map(language => <li key={language}>{language}</li>)}
                 </ul>
                 <img src={country.flags.png} alt={country.name.common}/>
+                <h2>Weather in {country.capital[0]}</h2>
+                <p>City Not Found</p>
             </div>
         )
     }
