@@ -1,14 +1,7 @@
 const mongoose = require('mongoose')
 
-if (process.argv.length < 3) {
-  console.log('give password as argument')
-  process.exit(1)
-}
-const password = process.argv[2]
 
-const url =
-    `mongodb+srv://rudra_garg:${password}@fso-1.oq53cqp.mongodb.net/phonebookApp?retryWrites=true&w=majority&appName=FSO-1`
-
+const url = process.env.MONGODB_URI
 mongoose.set('strictQuery', false)
 mongoose.connect(url)
 
